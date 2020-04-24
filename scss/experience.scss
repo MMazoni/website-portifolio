@@ -1,0 +1,19 @@
+#experience{
+    background: #1e1e1e;
+    background-image: url('../img/bg.png');
+    color: white;
+    padding: 70px 0;
+
+    strong{
+        color: #212529;
+        background: $yellow;
+        padding: 0 5px;
+    }
+
+    h2 span{
+        color: #212529;
+        background: $yellow;
+        padding: 10px 14px 5px;
+        display: inline-block;
+    }
+}

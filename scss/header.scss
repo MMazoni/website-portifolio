@@ -1,0 +1,35 @@
+header{
+    .header-call{
+        height: 60px;
+        position: fixed;
+        background: #010101;
+        width: 100%;
+        z-index: 1;
+    }
+
+    nav{
+        background: black;
+        display: none;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        z-index: 1;
+        position: fixed;
+        margin-top: 60px;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    li{
+        font-size: 25px;
+        list-style-type: none;
+        margin: 0;
+        text-align: center;
+        color: #e5d668;
+        font-family: "Anton";
+        padding: 15px;
+    }
+}

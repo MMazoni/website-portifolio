@@ -1,0 +1,28 @@
+.icon-bars{
+    font-size: 25px;
+    margin: 17px 15px;
+}
+
+#nav-button{
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.close-button{
+    font-size: 40px;
+    padding: 0 16px;
+}
+
+li {
+    cursor: pointer;
+    a{
+        color: $yellow;
+        &:link {
+            text-decoration: none;
+        }
+        &:hover {
+            color: white;
+        }
+    }
+}

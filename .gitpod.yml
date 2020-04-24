@@ -1,0 +1,8 @@
+tasks:
+  - init: npm install
+    command: npm install --global gulp-cli
+  - init: composer install
+  - command: php -S localhost:8000 -t web/
+ports:
+  - port: 8000
+    onOpen: open-browser

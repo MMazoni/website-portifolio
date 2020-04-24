@@ -1,0 +1,28 @@
+
+//reset
+@import "grid";
+
+@import "fonts";
+@import "variables";
+
+@import "typography";
+@import "header";
+
+
+@import "nav";
+
+
+
+//section
+@import "welcome";
+@import "about";
+@import "education";
+@import "skills";
+@import "experience";
+@import "contact";
+
+
+
+main{
+    padding-top: 60px;
+}
