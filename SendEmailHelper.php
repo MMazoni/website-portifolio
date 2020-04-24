@@ -11,7 +11,7 @@ class SendEmail
     {
         $dotenv = Dotenv::createImmutable(__DIR__);
         $dotenv->load();
-        $this->key = $_ENV['API_KEY'];
+        $this->key = getenv('API_KEY');
     }
     public function sendMail($name, $from, $subject, $content)
     {

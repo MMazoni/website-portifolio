@@ -32,8 +32,9 @@ if ( !isset($content) || empty($content) ) {
 $send_email = new SendEmail();
 
 if ($ok) {
-  $send_email->sendMail($name, $email, $subject, $content);
+  //$send_email->sendMail($name, $email, $subject, $content);
   $messages[] = 'Enviado o email de contato com sucesso';
+  $messages[] = $send_email->getKey();
 } else {
   $ok = false;
   $messages[] = 'Não foi possível o envio do email';
