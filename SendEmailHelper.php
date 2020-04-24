@@ -3,14 +3,14 @@
 require 'vendor/autoload.php';
 
 use SendGrid\Mail\Mail;
-use Dotenv\Dotenv;
+//use Dotenv\Dotenv;
 
 class SendEmail
 {
     public function __construct()
     {
-        $dotenv = Dotenv::createImmutable(__DIR__);
-        $dotenv->load();
+        /* $dotenv = Dotenv::createImmutable(__DIR__);
+        $dotenv->load(); */
         $this->key = getenv('API_KEY');
     }
     public function sendMail($name, $from, $subject, $content)
