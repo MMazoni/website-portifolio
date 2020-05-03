@@ -21,6 +21,7 @@
             </nav>
         </header>
         <main>
+            <button class="icon-top"><span class="icon-chevron-up"></span></button>
             <section id="welcome">
                 <div class="welcome-content">
                     <h1 class="text-center">Matheus Mazoni 
@@ -202,9 +203,33 @@
                 </div>
             </section>
         </main>
-        <hr />
         <footer>
-            
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <ul>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#education">Formação</a></li>
+                            <li><a href="#skills">Experiência</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 list-icon">
+                        <ul>
+                            <li><a href=""><span class="icon-github"></span></a></li>
+                            <li><a href=""><span class="icon-linkedin"></a></span></li>
+                            <li><a href=""><span class="icon-gmail"></span></a></li>
+                        </ul>
+                        <a href="https://mmazoni.github.io/"><p>https://mmazoni.github.io/</p></a>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                </div>
+            </div>
         </footer>
         <script src="js/app.js"></script>
     </body>

@@ -54,7 +54,6 @@
 }
 .icon-gmail:before {
   content: "\e90c";
-  color: #d14836;
 }
 .icon-gulp:before {
   content: "\e911";
@@ -78,7 +77,6 @@
 }
 .icon-linkedin:before {
   content: "\e90d";
-  color: #0077b5;
 }
 .icon-linux:before {
   content: "\e907";
@@ -115,6 +113,12 @@
 .icon-chevron-down:before {
   content: "\f078";
 }
+.icon-chevron-right:before {
+  content: "\e917";
+}
+.icon-chevron-up:before {
+  content: "\e918";
+}
 .icon-bars:before {
   content: "\f0c9";
 }
@@ -123,4 +127,10 @@
 }
 .icon-reorder:before {
   content: "\f0c9";
+}
+.icon-embed2:before {
+  content: "\ea80";
+}
+.icon-github:before {
+  content: "\eab0";
 }

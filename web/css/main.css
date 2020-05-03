@@ -1210,8 +1210,7 @@ small,
   color: #fca121; }
 
 .icon-gmail:before {
-  content: "\e90c";
-  color: #d14836; }
+  content: "\e90c"; }
 
 .icon-gulp:before {
   content: "\e911";
@@ -1234,8 +1233,7 @@ small,
   color: #ff2d20; }
 
 .icon-linkedin:before {
-  content: "\e90d";
-  color: #0077b5; }
+  content: "\e90d"; }
 
 .icon-linux:before {
   content: "\e907";
@@ -1272,6 +1270,12 @@ small,
 .icon-chevron-down:before {
   content: "\f078"; }
 
+.icon-chevron-right:before {
+  content: "\e917"; }
+
+.icon-chevron-up:before {
+  content: "\e918"; }
+
 .icon-bars:before {
   content: "\f0c9"; }
 
@@ -1280,6 +1284,12 @@ small,
 
 .icon-reorder:before {
   content: "\f0c9"; }
+
+.icon-embed2:before {
+  content: "\ea80"; }
+
+.icon-github:before {
+  content: "\eab0"; }
 
 html {
   font-family: 'Roboto', sans-serif; }
@@ -1294,6 +1304,20 @@ h2 {
   font-size: 60px;
   text-transform: uppercase;
   padding-bottom: 20px; }
+
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px; }
+
+h4 {
+  margin-bottom: 35px;
+  font-weight: 100;
+  font-size: 15px;
+  font-family: 'Roboto';
+  letter-spacing: 1.5px;
+  border-bottom: solid 1px black;
+  padding-bottom: 10px; }
 
 header .header-call {
   height: 60px;
@@ -1346,6 +1370,37 @@ li {
       text-decoration: none; }
     li a:hover {
       color: white; }
+
+footer {
+  padding: 40px;
+  background-image: url("../img/bg.png"); }
+  footer ul {
+    padding: 0; }
+  footer li {
+    list-style-type: none;
+    padding: 15px 0 0 0; }
+  footer li a {
+    color: black; }
+  footer li a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline; }
+  footer .list-icon {
+    border-left: 1px solid rgba(0, 0, 0, 0.1); }
+    footer .list-icon ul {
+      text-align: center; }
+    footer .list-icon li {
+      font-size: 30px;
+      padding: 15px 20px;
+      display: inline-block; }
+    footer .list-icon li a:hover {
+      color: #ffcd28;
+      font-weight: bold;
+      text-decoration: none; }
+    footer .list-icon a p {
+      text-align: center;
+      color: black;
+      font-size: 15px; }
 
 #welcome {
   height: 100vh;
@@ -1422,10 +1477,7 @@ h1 {
 #education {
   background: #ffcd28;
   background-image: url("../img/bg.png");
-  padding: 75px 0; }
-
-h4 {
-  font-weight: 100; }
+  padding: 70px 0; }
 
 #skills {
   padding: 75px 0; }
@@ -1449,6 +1501,10 @@ h4 {
     background: #ffcd28;
     padding: 10px 14px 5px;
     display: inline-block; }
+  #experience h4 {
+    border-color: white;
+    width: 100%;
+    max-width: 615px; }
 
 #contact {
   padding: 70px 0; }
@@ -1516,3 +1572,12 @@ button {
 
 main {
   padding-top: 60px; }
+
+.icon-top {
+  position: fixed;
+  right: 20px;
+  width: 50px;
+  font-size: 20px;
+  height: 50px;
+  bottom: 20px;
+  border: 1px solid #00000021; }

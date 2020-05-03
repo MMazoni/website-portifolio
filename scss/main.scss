@@ -11,7 +11,7 @@
 
 @import "nav";
 
-
+@import "footer";
 
 //section
 @import "welcome";
@@ -25,4 +25,14 @@
 
 main{
     padding-top: 60px;
+}
+
+.icon-top{
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    font-size: 20px;
+    height: 50px;
+    bottom: 20px;
+    border: 1px solid #00000021;
 }
