@@ -1324,7 +1324,7 @@ header .header-call {
   position: fixed;
   background: #010101;
   width: 100%;
-  z-index: 1; }
+  z-index: 2; }
 
 header nav {
   background: black;
@@ -1332,7 +1332,7 @@ header nav {
   width: 100%;
   max-width: 400px;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   margin-top: 60px; }
 
@@ -1372,7 +1372,7 @@ li {
       color: white; }
 
 footer {
-  padding: 40px;
+  padding: 40px 40px 0 40px;
   background-image: url("../img/bg.png"); }
   footer ul {
     padding: 0; }
@@ -1397,10 +1397,16 @@ footer {
       color: #ffcd28;
       font-weight: bold;
       text-decoration: none; }
-    footer .list-icon a p {
+    footer .list-icon p {
       text-align: center;
-      color: black;
       font-size: 15px; }
+      footer .list-icon p a {
+        color: black; }
+  footer .copyright {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+    font-size: 14px; }
 
 #welcome {
   height: 100vh;
@@ -1570,6 +1576,9 @@ button {
   button:focus {
     outline: 0; }
 
+.disabled {
+  opacity: 0.5; }
+
 main {
   padding-top: 60px; }
 
@@ -1580,4 +1589,6 @@ main {
   font-size: 20px;
   height: 50px;
   bottom: 20px;
-  border: 1px solid #00000021; }
+  border: 1px solid #00000021;
+  z-index: 1;
+  cursor: pointer; }

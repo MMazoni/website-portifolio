@@ -15,7 +15,8 @@
                 <ul>
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#education">Formação</a></li>
-                    <li><a href="#skills">Experiência</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
@@ -52,7 +53,7 @@
                                 Sou fã do Homem Aranha, graças ao desenho dos anos 90, 
                                 depois consumi todo o conteúdo relacionado ao <span>teioso</span>, desde os quadrinhos aos
                                 filmes. Tenho o hábito de ler e de alguns anos para cá, tive vontade de começar 
-                                a escrever. Criei meu <a href="https://mmazoni.github.io">blog de tecnologia</a>,
+                                a escrever. Criei meu <a href="https://mmazoni.github.io" target="_blank">blog de tecnologia</a>,
                                 que descreve minhas experiências nesse caminho que resolvi trilhar.
                             </p>
                             <p>
@@ -97,7 +98,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">    
-                            <h2>Skills</h2>
+                            <h2>Habilidades</h2>
                             <p>
                                 Abaixo estão listados as ferramentas que utilizo no meu dia-a-dia e as com o estudo em andamento:
                             </p>
@@ -210,23 +211,24 @@
                         <ul>
                             <li><a href="#about">Sobre</a></li>
                             <li><a href="#education">Formação</a></li>
-                            <li><a href="#skills">Experiência</a></li>
+                            <li><a href="#experience">Experiência</a></li>
+                            <li><a href="#skills">Skills</a></li>
                             <li><a href="#contact">Contato</a></li>
                         </ul>
                     </div>
                     <div class="col-6 list-icon">
                         <ul>
-                            <li><a href=""><span class="icon-github"></span></a></li>
-                            <li><a href=""><span class="icon-linkedin"></a></span></li>
-                            <li><a href=""><span class="icon-gmail"></span></a></li>
+                            <li><a href="https://github.com/MMazoni" target="_blank"><span class="icon-github"></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/matheus-mazoni/" target="_blank"><span class="icon-linkedin"></a></span></li>
+                            <li><a href="mailto:mmazoni.andrade@gmail.com"><span class="icon-gmail"></span></a></li>
                         </ul>
-                        <a href="https://mmazoni.github.io/"><p>https://mmazoni.github.io/</p></a>
+                        <p><a href="https://mmazoni.github.io/" target="_blank">https://mmazoni.github.io/</a></p>
                     </div>
                 </div>
                 <hr />
                 <div class="row">
                     <div class="col">
-
+                        <p class="copyright"> ©  Matheus Mazoni</p>
                     </div>
                 </div>
             </div>

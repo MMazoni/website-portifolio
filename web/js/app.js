@@ -11,7 +11,8 @@ const form = {
 
 form.submit.addEventListener('click', (e) => {
     e.preventDefault();
-
+    form.submit.setAttribute('disabled', true);
+    form.submit.classList.add('disabled');
     const request = new XMLHttpRequest();
 
     
@@ -36,6 +37,12 @@ form.submit.addEventListener('click', (e) => {
     request.send(requestData);
 
     function handleResponse (responseObject) {
+
+        setTimeout(() => {
+            form.submit.removeAttribute('disabled');
+            form.submit.classList.remove('disabled');
+        }, 3000);
+
         if (responseObject.ok) {
             form.nome.value = '';
             form.email.value = '';
@@ -91,4 +98,26 @@ iconbar.addEventListener("click", (e) => {
         removeCloseButton();
     }
 });
-// close nav
+// scroll
+
+let btnUp = document.querySelector('.icon-top');
+
+btnUp.style.display = 'none';
+
+window.addEventListener("scroll", function (event) {
+    let scroll = this.scrollY;
+
+    let distanceToTop = document.getElementById('about').offsetTop;
+
+    if( this.scrollY < (distanceToTop - 120)){
+        document.querySelector('.icon-top').style.display = 'none';
+    }else{
+        document.querySelector('.icon-top').style.display = 'block';
+    }
+});
+
+
+btnUp.addEventListener('click', (event) => {
+    const base_url = window.location.origin;
+    window.location.href = `${base_url}/#welcome`;
+});
