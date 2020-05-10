@@ -43,14 +43,14 @@ form.submit.addEventListener('click', (e) => {
     request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     request.send(requestData);
 
-    
 
     function handleResponse (responseObject) {
         console.log(responseObject)
         setTimeout(() => {
             form.submit.removeAttribute('disabled');
             form.submit.classList.remove('disabled');
-        }, 3000);
+            form.messages.style.display = "none";
+        }, 5000);
 
         if (responseObject.ok) {
             while (form.messages.childElementCount > 0) {

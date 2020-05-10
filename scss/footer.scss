@@ -51,5 +51,17 @@ footer {
         color: #6c757d;
         font-size: 14px;
     }
+
+}
+
+@media (max-width: 720px){
+    footer ul{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    footer .list-icon{
+        border: 0;
+    }
 }
 

@@ -211,7 +211,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6 col-12">
                         <ul>
                             <li><a href="#about">Sobre</a></li>
                             <li><a href="#education">Formação</a></li>
@@ -220,7 +220,7 @@
                             <li><a href="#contact">Contato</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 list-icon">
+                    <div class="col-md-6  col-12 list-icon">
                         <ul>
                             <li><a href="https://github.com/MMazoni" target="_blank"><span class="icon-github"></span></a></li>
                             <li><a href="https://www.linkedin.com/in/matheus-mazoni/" target="_blank"><span class="icon-linkedin"></a></span></li>

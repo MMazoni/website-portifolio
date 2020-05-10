@@ -1319,6 +1319,16 @@ h4 {
   border-bottom: solid 1px black;
   padding-bottom: 10px; }
 
+@media (max-width: 500px) {
+  h1 {
+    font-size: 60px; }
+  h2 {
+    font-size: 50px; }
+  h3 {
+    font-size: 20px; }
+  p {
+    font-size: 15px; } }
+
 header .header-call {
   height: 60px;
   position: fixed;
@@ -1330,7 +1340,7 @@ header nav {
   background: black;
   display: none;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: 100%;
   z-index: 2;
   position: fixed;
@@ -1408,6 +1418,13 @@ footer {
     color: #6c757d;
     font-size: 14px; }
 
+@media (max-width: 720px) {
+  footer ul {
+    text-align: center;
+    padding-bottom: 20px; }
+  footer .list-icon {
+    border: 0; } }
+
 #welcome {
   height: 100vh;
   font-family: 'Anton', sans-serif;
@@ -1467,6 +1484,10 @@ h1 {
   100% {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); } }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 60px; } }
 
 #about {
   padding: 70px 0; }
