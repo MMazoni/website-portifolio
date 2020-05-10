@@ -8,25 +8,29 @@ $content = isset($_POST["conteudo"]) ? $_POST["conteudo"] : '';
 
 $ok = true;
 $messages = [];
+$msg_name = '';
+$msg_email = '';
+$msg_subject = '';
+$msg_content = '';
 
 if ( !isset($name) || empty($name) ) {
   $ok = false;
-  $messages[] = 'O campo nome é obrigatório';
+  $msg_name = 'O campo nome é obrigatório';
 }
 
 if ( !isset($email) || empty($email) ) {
   $ok = false;
-  $messages[] = 'O campo email é obrigatório';
+  $msg_email = 'O campo email é obrigatório';
 }
 
 if ( !isset($subject) || empty($subject) ) {
   $ok = false;
-  $messages[] = 'O campo assunto é obrigatório';
+  $msg_subject = 'O campo assunto é obrigatório';
 }
 
 if ( !isset($content) || empty($content) ) {
   $ok = false;
-  $messages[] = 'O campo conteudo é obrigatório';
+  $msg_content = 'O campo conteudo é obrigatório';
 }
 
 $send_email = new SendEmail();
@@ -34,7 +38,6 @@ $send_email = new SendEmail();
 if ($ok) {
   //$send_email->sendMail($name, $email, $subject, $content);
   $messages[] = 'Enviado o email de contato com sucesso';
-  $messages[] = $send_email->getKey();
 } else {
   $ok = false;
   $messages[] = 'Não foi possível o envio do email';
@@ -43,5 +46,9 @@ if ($ok) {
 header('Content-type: application/json');
 echo json_encode([
   'ok' => $ok,
-  'mensagens' => $messages
+  'mensagens' => $messages,
+  'msg_name' => $msg_name,
+  'msg_email' => $msg_email,
+  'msg_subject' => $msg_subject,
+  'msg_content' => $msg_content,
 ]);

@@ -1,83 +1,112 @@
 #contact {
     padding: 70px 0;
-}
 
-form {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    div {
-        margin-bottom: 25px;
+
+    form {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        div {
+            margin-bottom: 25px;
+        }
     }
-}
 
-#form-messages {
-    background-color: rgb(255, 232, 232);
-    border: 1px solid red;
-    color: red;
-    display: none;
-    font-size: 12px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    padding: 10px 25px;
-    max-width: 250px;
-}
+    #messages {   
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding: 15px 25px;
+        width: 100%;
+        z-index: 9999;
+        text-align: center;
+        list-style-type: none;
+    }
+    span#btnClose {
+        margin-left: 15px;
+        color: black;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            color: $gray;
+        }
+    }
+    .sucesso {
+        background-color: rgb(232, 255, 235);
+        border: 1px solid green;
+        color: green;
+    }
 
-input {
-    border: 0;
-    border-bottom: solid 1px $gray;
-    display: block;
-    width: 100%;
-    font-family: 'Roboto';
-    font-weight: 100;
-    margin-bottom: 25px;
-    font-size: 14px;
-    padding-left: 10px;
-    &:focus {
+    .erro {
+        background-color: rgb(255, 232, 232);
+        border: 1px solid red;
+        color: red;
+    }
+
+    input {
         border: 0;
-        outline: 0;
-        border-bottom: solid 1.5px $yellow;
+        border-bottom: solid 1px $gray;
+        display: block;
+        width: 100%;
+        font-family: 'Roboto';
+        font-weight: 100;
+        margin-bottom: 7px;
+        font-size: 14px;
+        padding-left: 10px;
+        &:focus {
+            border: 0;
+            outline: 0;
+            border-bottom: solid 1.5px $yellow;
+            font-size: 17px;
+        }
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover, 
+        &:-webkit-autofill:focus, 
+        &:-webkit-autofill:active  {
+            -webkit-box-shadow: 0 0 0 30px white inset !important;
+        }
+    }
+
+    label {
+        margin: 0;
+        font-size: 11px;
+    }
+
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        font-family: 'Roboto';
+        font-weight: 100;
         font-size: 17px;
+        &:focus {
+            outline: 0;
+            border: solid 1.5px $yellow;
+        }
     }
-    &:-webkit-autofill,
-    &:-webkit-autofill:hover, 
-    &:-webkit-autofill:focus, 
-    &:-webkit-autofill:active  {
-        -webkit-box-shadow: 0 0 0 30px white inset !important;
+
+    button {
+        width: 100%;
+        background-color: $yellow;
+        padding: 5px;
+        border: 0;
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        &:focus {
+            outline: 0;
+        }
     }
-}
 
-label {
-    margin: 0;
-    font-size: 11px;
-}
-
-textarea {
-    display: block;
-    width: 100%;
-    padding: 5px;
-    font-family: 'Roboto';
-    font-weight: 100;
-    font-size: 17px;
-    &:focus {
-        outline: 0;
-        border: solid 1.5px $yellow;
+    .disabled {
+        opacity: 0.5;
     }
-}
 
-button {
-    width: 100%;
-    background-color: $yellow;
-    padding: 5px;
-    border: 0;
-    font-family: 'Roboto';
-    text-transform: uppercase;
-    &:focus {
-        outline: 0;
+    .erro-validation {
+        color: red;
+        font-size: 11px;
     }
-}
 
-.disabled {
-    opacity: 0.5;
 }
-

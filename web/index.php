@@ -182,22 +182,26 @@
                 <div class="container">
                     <h2>Contato</h2>
                     <form id="form" method="post">
-                    <ul id="form-messages"></ul>
+                    <ul id="messages"></ul>
                     <div>
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome">
+                        <span id="msg_name" class="erro-validation"></span>
                     </div>
                     <div>
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email">
+                        <span id="msg_email" class="erro-validation"></span>
                     </div>
                     <div>
                         <label for="assunto">Assunto</label>
                         <input type="text" id="assunto" name="assunto">
+                        <span id="msg_subject" class="erro-validation"></span>
                     </div>
                     <div>
                         <label for="conteudo">Conteúdo</label>
                         <textarea name="conteudo" id="conteudo" cols="25" rows="3"></textarea>
+                        <span id="msg_content" class="erro-validation"></span>
                     </div>
                     <button id="btn-submit" type="submit" name="submit">Enviar</button>
                 </form>

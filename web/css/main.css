@@ -1514,70 +1514,84 @@ h1 {
 
 #contact {
   padding: 70px 0; }
-
-form {
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto; }
-  form div {
-    margin-bottom: 25px; }
-
-#form-messages {
-  background-color: #ffe8e8;
-  border: 1px solid red;
-  color: red;
-  display: none;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  padding: 10px 25px;
-  max-width: 250px; }
-
-input {
-  border: 0;
-  border-bottom: solid 1px #b6adad;
-  display: block;
-  width: 100%;
-  font-family: 'Roboto';
-  font-weight: 100;
-  margin-bottom: 25px;
-  font-size: 14px;
-  padding-left: 10px; }
-  input:focus {
+  #contact form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; }
+    #contact form div {
+      margin-bottom: 25px; }
+  #contact #messages {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    z-index: 9999;
+    text-align: center;
+    list-style-type: none; }
+  #contact span#btnClose {
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s; }
+    #contact span#btnClose:hover {
+      color: #b6adad; }
+  #contact .sucesso {
+    background-color: #e8ffeb;
+    border: 1px solid green;
+    color: green; }
+  #contact .erro {
+    background-color: #ffe8e8;
+    border: 1px solid red;
+    color: red; }
+  #contact input {
     border: 0;
-    outline: 0;
-    border-bottom: solid 1.5px #ffcd28;
+    border-bottom: solid 1px #b6adad;
+    display: block;
+    width: 100%;
+    font-family: 'Roboto';
+    font-weight: 100;
+    margin-bottom: 7px;
+    font-size: 14px;
+    padding-left: 10px; }
+    #contact input:focus {
+      border: 0;
+      outline: 0;
+      border-bottom: solid 1.5px #ffcd28;
+      font-size: 17px; }
+    #contact input:-webkit-autofill, #contact input:-webkit-autofill:hover, #contact input:-webkit-autofill:focus, #contact input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px white inset !important; }
+  #contact label {
+    margin: 0;
+    font-size: 11px; }
+  #contact textarea {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Roboto';
+    font-weight: 100;
     font-size: 17px; }
-  input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px white inset !important; }
-
-label {
-  margin: 0;
-  font-size: 11px; }
-
-textarea {
-  display: block;
-  width: 100%;
-  padding: 5px;
-  font-family: 'Roboto';
-  font-weight: 100;
-  font-size: 17px; }
-  textarea:focus {
-    outline: 0;
-    border: solid 1.5px #ffcd28; }
-
-button {
-  width: 100%;
-  background-color: #ffcd28;
-  padding: 5px;
-  border: 0;
-  font-family: 'Roboto';
-  text-transform: uppercase; }
-  button:focus {
-    outline: 0; }
-
-.disabled {
-  opacity: 0.5; }
+    #contact textarea:focus {
+      outline: 0;
+      border: solid 1.5px #ffcd28; }
+  #contact button {
+    width: 100%;
+    background-color: #ffcd28;
+    padding: 5px;
+    border: 0;
+    font-family: 'Roboto';
+    text-transform: uppercase; }
+    #contact button:focus {
+      outline: 0; }
+  #contact .disabled {
+    opacity: 0.5; }
+  #contact .erro-validation {
+    color: red;
+    font-size: 11px; }
 
 main {
   padding-top: 60px; }
@@ -1591,4 +1605,5 @@ main {
   bottom: 20px;
   border: 1px solid #00000021;
   z-index: 1;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #ffcd28; }
