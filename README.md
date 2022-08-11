@@ -13,14 +13,14 @@ Passo a passo para fazer a instalação do ambiente.
 Clona o repositório, entre no diretório e utilize os comandos abaixo:
 
 ```
-$ npm Install
-$ composer Install
+$ yarn -i
+$ composer install
 ```
 
 Para subir o servidor local
 
 ```
-$ php -S localhost:8000 -t web/
+$ php -S localhost:8000 -t public/
 ```
 
 ## Authors

@@ -5,11 +5,16 @@
   "repository": "git@github.com:MMazoni/website-portifolio.git",
   "author": "Matheus Mazoni <mmazoni.andrade@gmail.com>",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "devDependencies": {
     "husky": "^8.0.1"
   },
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "vite": "^3.0.6"
+  },
+  "scripts": {
+    "dev": "APP_ENV=development vite",
+    "build": "vite build"
   }
 }

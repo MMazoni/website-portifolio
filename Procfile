@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-nginx web/
+public: vendor/bin/heroku-php-nginx public/
