@@ -1,4 +1,9 @@
 // AJAX
+import jQuery from "jquery";
+
+window.jquery = window.$ = jQuery;
+
+console.log($("#nome"))
 
 const form = {
     nome: document.getElementById('nome'),

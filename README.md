@@ -1,14 +1,14 @@
 # Matheus Currículo Website
 
-Meu site pessoal, currículo, portifolio desenvolvido por mim e minha namorada. Utilizamos PHP e Javascript.
+Meu site pessoal, currículo, portifolio desenvolvido por mim e minha namorada :cupid:. Utilizamos PHP e Javascript.
 
 ### Prerequisites
 
-É necessário ter instalado `npm`, `node`, `php` e `composer`.
+É necessário ter instalado `yarn`, `node >= 16`, `php >= 8` e `composer`.
 
 ### Installing
 
-Passo a passo para fazer a instalação do ambiente. 
+Passo a passo para fazer a instalação do ambiente.
 
 Clona o repositório, entre no diretório e utilize os comandos abaixo:
 
@@ -20,6 +20,7 @@ $ composer install
 Para subir o servidor local
 
 ```
+$ yarn dev
 $ php -S localhost:8000 -t public/
 ```
 
