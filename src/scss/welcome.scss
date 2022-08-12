@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 #welcome{
     height: 100vh;
     font-family: 'Anton', sans-serif;
@@ -53,7 +55,7 @@ h1{
     100% {
       -webkit-transform: translate(0, 0);
               transform: translate(0, 0); } }
-  
+
   @keyframes pulse {
     0% {
       -webkit-transform: translate(0, 0);
@@ -64,7 +66,7 @@ h1{
     100% {
       -webkit-transform: translate(0, 0);
               transform: translate(0, 0); } }
-  
+
   @media (max-width: 500px){
 
     h1{

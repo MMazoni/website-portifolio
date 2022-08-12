@@ -1,6 +1,6 @@
 // AJAX
 import jQuery from "jquery";
-
+import './scss';
 window.jquery = window.$ = jQuery;
 
 console.log($("#nome"))
@@ -27,7 +27,6 @@ form.submit.addEventListener('click', (e) => {
     form.submit.classList.add('disabled');
     const request = new XMLHttpRequest();
 
-    
     request.onload = () => {
         let responseObject = null;
 
@@ -41,13 +40,12 @@ form.submit.addEventListener('click', (e) => {
             handleResponse(responseObject);
         }
     };
-    
+
     const requestData = `nome=${form.nome.value}&email=${form.email.value}&assunto=${form.assunto.value}&conteudo=${form.conteudo.value}`
 
     request.open('post', 'form-validate.php');
     request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     request.send(requestData);
-
 
     function handleResponse (responseObject) {
         console.log(responseObject)
@@ -90,11 +88,10 @@ form.submit.addEventListener('click', (e) => {
             msg.erro_email.textContent = responseObject.msg_email;
             msg.erro_assunto.textContent = responseObject.msg_subject;
             msg.erro_conteudo.textContent = responseObject.msg_content;
-            
         }
-        
+
     }
-    
+
 })
 
 // Menu Navbar
@@ -117,10 +114,9 @@ function removeCloseButton() {
     iconbar.classList.add('icon-bars');
 }
 
-iconbar.addEventListener("click", (e) => {
+iconbar.addEventListener("click", () => {
     if (nav.style.display === 'none') {
         nav.style.display = "block";
-        console.log(iconbar)
         iconbar.classList.remove('icon-bars');
         iconbar.innerHTML = '&times;';
         iconbar.classList.add('close-button');
@@ -132,22 +128,21 @@ iconbar.addEventListener("click", (e) => {
 // scroll
 
 let btnUp = document.querySelector('.icon-top');
-
 btnUp.style.display = 'none';
 
-window.addEventListener("scroll", function (event) {
+window.addEventListener("scroll", function () {
     let scroll = this.scrollY;
 
     let distanceToTop = document.getElementById('about').offsetTop;
 
-    if( this.scrollY < (distanceToTop - 120)){
+    if (scroll < (distanceToTop - 120)) {
         document.querySelector('.icon-top').style.display = 'none';
-    }else{
+    } else {
         document.querySelector('.icon-top').style.display = 'block';
     }
 });
 
-btnUp.addEventListener('click', (event) => {
+btnUp.addEventListener('click', () => {
     const base_url = window.location.origin;
     window.location.href = `${base_url}/#welcome`;
 });
