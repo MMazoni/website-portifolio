@@ -1,5 +1,6 @@
 <?php
-require_once '../SendEmailHelper.php';
+
+use SendEmailHelper;
 
 $name = isset($_POST["nome"]) ? $_POST["nome"] : '';
 $email = isset($_POST["email"]) ? $_POST["email"] : '';
@@ -33,7 +34,7 @@ if ( !isset($content) || empty($content) ) {
   $msg_content = 'O campo conteudo é obrigatório';
 }
 
-$send_email = new SendEmail();
+$send_email = new SendEmailHelper();
 
 if ($ok) {
   $send_email->sendMail($name, $email, $subject, $content);

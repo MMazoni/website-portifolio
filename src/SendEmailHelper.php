@@ -1,11 +1,11 @@
 <?php
 
-require 'vendor/autoload.php';
-
+use SendGrid;
 use SendGrid\Mail\Mail;
+
 //use Dotenv\Dotenv;
 
-class SendEmail
+class SendEmailHelper
 {
     public function __construct()
     {

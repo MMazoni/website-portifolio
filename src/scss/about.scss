@@ -1,0 +1,19 @@
+@import 'variables.scss';
+
+#about{
+    padding: 70px 0;
+    span{
+        color: #212529;
+        background: $yellow;
+        padding: 0 5px;
+    }
+
+    h2 span{
+        padding: 0px 12px;
+        display: inline-block;
+    }
+
+    a{
+        color: $yellow;
+    }
+}
